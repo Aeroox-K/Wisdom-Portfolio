@@ -21,7 +21,7 @@ const RecentProjects = () => {
                      <CardContainer>
                      <Link href={link} target="_blank" rel="noopener noreferrer">
                         <CardBody>                           
-                        <div className='relative flex item-center justify-center w-[80vw] overflow-hidden sm:w-[460px] h-[45vh] md:h-[50vh] lg:h-[50vh] mb-10'>
+                        <div className='relative flex item-center justify-center w-[80vw] overflow-hidden sm:w-[460px] h-[35vh] md:h-[45vh] lg:h-[45vh] mb-10'>
                         <div className='relative w-full h-full overflow-hidden rounded-2xl lg:rounded-3xl bg-[#13162d]'>
                             <Image 
                                src="/bg.png" 
