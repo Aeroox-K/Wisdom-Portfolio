@@ -14,6 +14,7 @@ export const navItems = [
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
       img: "/b1.svg",
+      width: "w-full", 
       spareImg: "",
     },
     {
@@ -45,6 +46,8 @@ export const navItems = [
       titleClassName: "justify-start",
       img: "/grid.svg",
       spareImg: "/b4.svg",
+      width: 100, 
+      height: 100,
     },
   
     {
@@ -56,6 +59,8 @@ export const navItems = [
       titleClassName: "justify-center md:justify-start lg:justify-center",
       img: "/b5.svg",
       spareImg: "/grid.svg",
+      width: "w-full", 
+      height: 100,
     },
     {
       id: 6,
@@ -73,7 +78,7 @@ export const navItems = [
     {
       id: 1,
       title: "CarHub",
-      des: "Find, book or rent a car — quickly and easily",
+      des: "Find, book or rent a car — quickly and easily. Streamline your car rental experience with our effortless booking process",
       img: "/carhub.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/headless-ui.svg"],
       link: "https://carhub-a.vercel.app",

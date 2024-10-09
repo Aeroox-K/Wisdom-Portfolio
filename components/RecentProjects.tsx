@@ -3,6 +3,7 @@ import React, { Children } from 'react'
 import { CardBody, CardContainer } from './ui/3d-card'
 import { FaLocationArrow } from 'react-icons/fa'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const RecentProjects = () => {
   return (
@@ -22,13 +23,21 @@ const RecentProjects = () => {
                         <CardBody>                           
                         <div className='relative flex item-center justify-center w-[80vw] overflow-hidden sm:w-[460px] h-[45vh] md:h-[50vh] lg:h-[50vh] mb-10'>
                         <div className='relative w-full h-full overflow-hidden rounded-2xl lg:rounded-3xl bg-[#13162d]'>
-                            <img src="/bg.png" alt="bg.jpg"/>
+                            <Image 
+                               src="/bg.png" 
+                               alt="bg.jpg"
+                               width={500}  
+                               height={500}
+
+                            />
                         </div>
-                        <img
+                        <Image
                             src={img}
                             alt={title}
+                            width={500}
+                            height={500}
                             className='z-10 rounded-3xl overflow-hidden absolute rotate-2 bottom-1'
-                            /> 
+                        /> 
                        </div>
                        <h1 className='font-bold lg:text-2xl md:text-xl pl-1 text-bale line-clamp-1'>
                             {title}
@@ -43,8 +52,13 @@ const RecentProjects = () => {
                                 {iconLists.map((icon, index) => (
                                     <div key={icon} className='border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center' 
                                     style={{transform: `translateX(-${5 * index * 2}px)`}}  >
-                                        <img src={icon}  alt={icon}
-                                        className='p-2' />
+                                        <Image 
+                                          src={icon}  
+                                          alt={icon}
+                                          width={100}
+                                          height={100}
+                                          className='p-2' 
+                                        />
                                     </div>
                                  ))}
                             </div>

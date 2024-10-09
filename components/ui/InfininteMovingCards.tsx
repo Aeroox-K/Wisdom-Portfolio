@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -25,24 +26,29 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
-  const [start, setStart] = useState(false);
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
 
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
-
-      getDirection();
-      getSpeed();
-      setStart(true);
+    function addAnimation() {
+      if (containerRef.current && scrollerRef.current) {
+        const scrollerContent = Array.from(scrollerRef.current.children);
+  
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          if (scrollerRef.current) {
+            scrollerRef.current.appendChild(duplicatedItem);
+          }
+        });
+  
+        getDirection();
+        getSpeed();
+        setStart(true);
+      }
     }
-  }
+
+  }, );
+  const [start, setStart] = useState(false);
+
+ 
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -106,7 +112,11 @@ export const InfiniteMovingCards = ({
                 
                 <span className="flex items-center gap-1">   
                     <div className="me-3">
-                        <img src="/profile.svg" alt="profile" />
+                        <Image src="/profile.svg"
+                        alt="profile"
+                        width={100}
+                        height={100}
+                        /> 
                     </div>    
                        
                     <div className="flex flex-col">
