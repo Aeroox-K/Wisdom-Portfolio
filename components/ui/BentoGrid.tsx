@@ -127,7 +127,7 @@ export const BentoGridItem = ({
               <div className="flex flex-col gap-3 lg:gap-6">
                 {/* rightside mapping */}
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
-                {[ 'Firebase', 'Tailwind', 'Sass'].map((item) => (
+                {[ 'Firebase', 'Tailwind', 'Sass', 'Redux'].map((item) => (
 
                   <span key={item} className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
                     {item}

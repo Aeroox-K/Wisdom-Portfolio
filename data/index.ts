@@ -57,7 +57,7 @@ export const navItems = [
       className: "md:col-span-2 col-span-2 col-span-1 md:h-[336px]",
       imgClassName: "absolute right-0 bottom-0 md:w-96",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      img: "/b5.png",
       spareImg: "/grid.svg",
       width: "w-full", 
       height: 100,
@@ -93,11 +93,11 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "SuoBank - Digital Bank",
-      des: "Digital banking system for easy and faster monitary banking needs for day to day usage.",
-      img: "/suobank.jpg",
-      iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/vitejs.svg"],
-      link: "https://suobank-a.vercel.app",
+      title: "Mecnomit - Engineering Servicing company",
+      des: "Mecnomit Limited is your trusted partner in Asset Integrity management and Inspection Services.",
+      img: "/mecnomit.jpg",
+      iconLists: ["/html-5.svg", "/css-3.svg", "/javascript.svg"],
+      link: "https://mecnomit.com",
     },
     {
       id: 4,
@@ -109,19 +109,19 @@ export const navItems = [
     },
     {
       id: 5,
-      title: "Members List - React Application",
-      des: "An Exclusive members list for conscise list of our exclusive and dedicated members of our community",
-      img: "/memberlist.jpg",
-      iconLists: ["/next.svg", "/tail.svg", "/javascript.svg",],
-      link: "https://team-list-project.vercel.app",
-    },
-    {
-      id: 6,
       title: "SuoBank - Digital Bank",
       des: "Digital banking system for easy and faster monitary banking needs for day to day usage.",
       img: "/suobank.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/vitejs.svg"],
       link: "https://suobank-a.vercel.app",
+    },
+    {
+      id: 6,
+      title: "CarlsHelpdesk - Ticket Helpdesk",
+      des: "Carls Helpdesk is your central hub for managing all support-related activities.",
+      img: "/memberlist.jpg",
+      iconLists: ["/next.svg", "/tail.svg", "/javascript.svg",],
+      link: "https://team-list-project.vercel.app",
     },
   ];
   
