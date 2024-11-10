@@ -126,44 +126,38 @@ export const navItems = [
   ];
   
   export const testimonials = [
-    {
+     {
+      id: 1,
+      img: "/Mecnomit-profile.png",
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Collaborating with Wisdom was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wisdom's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wisdom is the ideal partner.",
+      name: "Genesis Mecnomit",
+      title:"Ceo Mecnomit Limted",
     },
     {
+      id: 2,
+      img: "/Paynobs-profile.png",
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Collaborating with Wisdom was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wisdom's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wisdom is the ideal partner.",
+      name: "Paynobs",
+      title: "Director of Paynobs Technologies",
     },
     {
+      id: 3,
+      img: "/untitled.png",
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Collaborating with Wisdom was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wisdom's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wisdom is the ideal partner.",
+      name: "Blackaa",
+      title: "Ceo of BLACKAA Technologies",
     },
   ];
   
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      name: "Mecnomit",
+      img: "/Mecnomit-logo.png",
+      nameImg: "/Mecnomit-logo.png",
     },
     {
       id: 2,
@@ -216,7 +210,7 @@ export const navItems = [
     {
       id: 4,
       title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      desc: "Assisted in the development of a web-based platform using React.js and Next.js, enhancing interactivity.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
