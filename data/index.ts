@@ -119,7 +119,7 @@ export const navItems = [
       id: 6,
       title: "CarlsHelpdesk - Ticket Helpdesk",
       des: "Carls Helpdesk is your central hub for managing all support-related activities.",
-      img: "/memberlist.jpg",
+      img: "/carlshelpdesk.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/javascript.svg",],
       link: "https://team-list-project.vercel.app",
     },
