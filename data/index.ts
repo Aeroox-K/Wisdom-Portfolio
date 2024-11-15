@@ -88,7 +88,7 @@ export const navItems = [
       title: "Briefit - Simplify your reading with summarizer ",
       des: "Summarize Articles with OPENAI GPT-4 - Simplify your reading with summarizer, an open source summarizer that transforms lenghty articles into clear and conscise summaries",
       img: "/briefit.jpg",
-      iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/vitejs.svg", "redux.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/vitejs.svg"],
       link: "https://briefit.vercel.app",
     },
     {
