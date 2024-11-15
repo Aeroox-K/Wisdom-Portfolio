@@ -8,7 +8,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I has prioritize client collaboration, fostering open communication ",
+      title: "I prioritize client collaboration, fostering open communication ",
       description: "",
       className: "lg:col-span-2 md:col-span-2 col-span-1 md:row-span-2 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
