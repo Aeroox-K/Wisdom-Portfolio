@@ -121,7 +121,7 @@ export const navItems = [
       des: "Carls Helpdesk is your central hub for managing all support-related activities.",
       img: "/carlshelpdesk.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/javascript.svg",],
-      link: "https://team-list-project.vercel.app",
+      link: "https://carls-helpdesk.vercel.app/",
     },
   ];
   
@@ -224,7 +224,7 @@ export const navItems = [
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/x.svg",
       href: "https://x.com/wisdom_kayea"
     },
     {
