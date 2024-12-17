@@ -127,15 +127,17 @@ export const BentoGridItem = ({
                           {/* leftside mapping */}
 
                           {itemOne.map((item) => (
-                            <span key={item} className="flex gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
+                            <span key={item} className="flex items-center gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
                                   {item} 
                                   {iconOne.map((icon, index) => (
+                                      <div key={icon} >
                                       <Image 
-                                        src={icon}
-                                        alt={icon}
-                                        width={15}
-                                        height={15}
-                                      />
+                                      src={icon}
+                                      alt={icon}
+                                      width={15}
+                                      height={15}
+                                    />
+                                    </div>
                                   ))}
                             </span>
                           ))}
@@ -146,15 +148,17 @@ export const BentoGridItem = ({
                       {/* rightside mapping */}
 
                       {itemTwo.map((item) => (
-                        <span key={item} className="flex gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >                       
+                        <span key={item} className="flex items-center gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >                       
                               {item} 
                               {iconTwo.map((icon, index) => (
-                                  <Image 
+                                  <div key={icon} >
+                                    <Image 
                                     src={icon}
                                     alt={icon}
                                     width={15}
                                     height={15}
                                   />
+                                  </div>
                               ))}
                         </span>
                       ))}
