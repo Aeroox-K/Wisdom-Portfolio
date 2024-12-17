@@ -121,7 +121,7 @@ export const BentoGridItem = ({
                  id, itemOne, itemTwo, iconOne, iconTwo,
                 }) => (
 
-                  <div className="flex flex-row gap-1 lg:gap-4">
+                  <div key={id} className="flex flex-row gap-1 lg:gap-4">
 
                     <div className="flex flex-col gap-2 lg:gap-4">
                           {/* leftside mapping */}
