@@ -108,7 +108,7 @@ export const navItems = [
       itemOne: ['ReactNative'],
       itemTwo: ['...'],
       iconOne: ["/re.svg"],
-      iconTwo: ["/."] 
+      iconTwo: [""] 
     },
   ]
   
