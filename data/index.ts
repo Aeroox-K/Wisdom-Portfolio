@@ -29,8 +29,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      title: "My Stacks",
+      description: "",
       className: "lg:col-span-1 md:col-span-1 col-span-1 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -73,6 +73,44 @@ export const navItems = [
       spareImg: "",
     },
   ];
+
+  export const stacks = [
+    {
+      id: 1,
+      itemOne: ['React.js'],
+      itemTwo: ['Firebase'],
+      iconOne: ["/re.svg"],
+      iconTwo: ["/firebase.svg"] 
+    },
+    {
+      id: 2,
+      itemOne: ['Next.js'],
+      itemTwo: ['Tailwind'],
+      iconOne: ["/next.svg",],
+      iconTwo: ["/tail.svg"] 
+    },
+    {
+      id: 3,
+      itemOne: ['Typescript'],
+      itemTwo: ['Sass'],
+      iconOne: ["/ts.svg"],
+      iconTwo: ["/sass.svg"] 
+    },
+    {
+      id: 4,
+      itemOne: ['Javascript'],
+      itemTwo: [ 'Redux'],
+      iconOne: ["/javascript.svg"],
+      iconTwo: ["/redux.svg"] 
+    },
+    {
+      id: 5,
+      itemOne: ['ReactNative'],
+      itemTwo: ['...'],
+      iconOne: ["/re.svg"],
+      iconTwo: [""] 
+    },
+  ]
   
   export const projects = [
     {

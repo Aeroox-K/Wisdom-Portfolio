@@ -9,6 +9,8 @@ import Lottie from "react-lottie";
 import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { stacks } from '@/data';
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -112,29 +114,59 @@ export const BentoGridItem = ({
           {id === 2 && <GlobeDemo /> }
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2" >
-              <div className="flex flex-col gap-3 lg:gap-6">
-                {/* leftside mapping */}
-                {['React.js', 'Next.js', 'Typescript', 'ReactNative'].map((item) => (
-                  <span key={item} className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
-                    {item}
-                  </span>
-                ))}
+            <div className="flex gap-3 lg:gap-5 w-fit absolute -right-0 lg:-right-0" >
+              
+              <div className="flex flex-col gap-1 lg:gap-4">
+                {stacks.map(({
+                 id, itemOne, itemTwo, iconOne, iconTwo,
+                }) => (
 
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
-              </div>
+                  <div className="flex flex-row gap-1 lg:gap-4">
 
-              <div className="flex flex-col gap-3 lg:gap-6">
-                {/* rightside mapping */}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
-                {[ 'Firebase', 'Tailwind', 'Sass', 'Redux'].map((item) => (
+                    <div className="flex flex-col gap-2 lg:gap-4">
+                          {/* leftside mapping */}
 
-                  <span key={item} className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
-                    {item}
-                  </span>
-                ))}
-              </div>
+                          {itemOne.map((item) => (
+                            <span key={item} className="flex gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
+                                  {item} 
+                                  {iconOne.map((icon, index) => (
+                                      <Image 
+                                        src={icon}
+                                        alt={icon}
+                                        width={15}
+                                        height={15}
+                                      />
+                                  ))}
+                            </span>
+                          ))}
+                    </div>
+                      
+                      
+                    <div className="flex flex-col gap-2 lg:gap-4">
+                      {/* rightside mapping */}
+
+                      {itemTwo.map((item) => (
+                        <span key={item} className="flex gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >                       
+                              {item} 
+                              {iconTwo.map((icon, index) => (
+                                  <Image 
+                                    src={icon}
+                                    alt={icon}
+                                    width={15}
+                                    height={15}
+                                  />
+                              ))}
+                        </span>
+                      ))}
+                    </div>
+
+
+                  </div>
+                ))} 
+ 
+              </div>         
             </div>
+
           )}
 
          {id === 6 && (
