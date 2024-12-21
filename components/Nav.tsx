@@ -6,8 +6,8 @@ const Nav = () => {
       <Image 
         src="Wisdom Logo-W.svg" 
         alt="Wisdom Logo-W.svg"
-        width={80}  
-        height={80}
+        width={70}  
+        height={70}
       />
     </div>
   )
