@@ -2,7 +2,7 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenetateEffect'
 import MagicButton from './ui/MagicButton'
-import { FaLocationArrow } from 'react-icons/fa'
+import { FaDocker, FaFile, FaFileContract, FaFileDownload, FaFileInvoice, FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -28,13 +28,24 @@ const Hero = () => {
             words='Wisdom Kayea a Frontend Developer'
             />
             <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl' >I Design and Develop creative and scalable websites with great user experience</p>
-            <a href="#projects">
-              <MagicButton 
-              title='Show my Work' 
-              icon = { <FaLocationArrow />}
-              position='right'
-              />
-            </a>
+            
+            <div className='flex md:flex-row justify-center items-center flex-col gap-4' >
+              <a href="#projects">
+                <MagicButton 
+                title='Show my Work' 
+                icon = { <FaLocationArrow />}
+                position='right'
+                />
+              </a>
+
+              <a href="https://drive.google.com/file/d/1XgZfl8Blk-eVTk5aL6iqh7WXkhUmsN7B/view?usp=drive_link">
+                <MagicButton 
+                title='Resume' 
+                icon = { <FaFileInvoice /> }
+                position='right'
+                />
+              </a>
+            </div>
           </div>
 
 
