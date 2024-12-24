@@ -29,8 +29,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Tech Stacks",
-      description: "Constantly Improving My",
+      title: "Stacks",
+      description: "My Tech",
       className: "lg:col-span-1 md:col-span-1 col-span-1 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center",
