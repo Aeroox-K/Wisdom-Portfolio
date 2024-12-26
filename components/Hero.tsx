@@ -30,7 +30,7 @@ const Hero = () => {
             className='text-start text-[34px] md:text-5xl lg:text-5xl'
             words='Creative Frontend Developer'
             />
-            <p className='text-start justify-center md:w-2/3 w-full md:tracking-wider leading-6 mb-4 text-sm md:text-lg lg:text-lg' >Hi, I'm <span className='text-purple md:border-b-2 border-b border-purple ' >Wisdom Kayea</span> a Frontend Developer passionate about Designing and Developing creative and scalable websites with great performance and user experience</p>
+            <p className='text-start justify-center md:w-2/3 w-full md:tracking-wider leading-6 mb-4 text-sm md:text-lg lg:text-lg' >Hi, I&apos;m <span className='text-purple md:border-b-2 border-b border-purple ' >Wisdom Kayea</span> a Frontend Developer passionate about Designing and Developing creative and scalable websites with great performance and user experience</p>
             
             <div className='flex items-start gap-4' >
               <a href="#projects">
