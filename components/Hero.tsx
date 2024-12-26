@@ -2,7 +2,10 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenetateEffect'
 import MagicButton from './ui/MagicButton'
-import { FaDocker, FaFile, FaFileContract, FaFileDownload, FaFileInvoice, FaLocationArrow } from 'react-icons/fa'
+import { FaFileInvoice, FaLocationArrow } from 'react-icons/fa'
+import { socialMedia } from '@/data';
+import Link from 'next/link';
+import Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -17,19 +20,19 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
 
-        <div className='flex justify-center relative md:my-20 my-1 z-10'  >
+        <div className='flex md:flex-row flex-col items-center justify-center relative md:my-16 -my-10 z-10 '  >
          
-          <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center ' >
-            <h2 className='uppercase tracking-widest text-sm md:text-sm text-center text-blue-100 max-w-80 '>
-              Hello, I am
+          <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col text-start max-sm:mb-10 ' >
+            <h2 className='uppercase tracking-widest text-sm md:text-sm text-start text-blue-100 max-w-80 '>
+              {/* Hello, I am */}
             </h2>
             <TextGenerateEffect 
-            className='text-center text-[38px] md:text-[5xl] lg:text-[6xl]'
-            words='Wisdom Kayea a Frontend Developer'
+            className='text-start text-[34px] md:text-5xl lg:text-5xl'
+            words='Creative Frontend Developer'
             />
-            <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl' >I Design and Develop creative and scalable websites with great user experience</p>
+            <p className='text-start justify-center md:w-2/3 w-full md:tracking-wider leading-6 mb-4 text-sm md:text-lg lg:text-lg' >Hi, I'm <span className='text-purple md:border-b-2 border-b border-purple ' >Wisdom Kayea</span> a Frontend Developer passionate about Designing and Developing creative and scalable websites with great performance and user experience</p>
             
-            <div className='flex md:flex-row justify-center items-center flex-col gap-4' >
+            <div className='flex items-start gap-4' >
               <a href="#projects">
                 <MagicButton 
                 title='Show my Work' 
@@ -49,12 +52,16 @@ const Hero = () => {
           </div>
 
 
-            {/* 
-          PUT IMAGE HERE
           <div>
-            <p>Hello there</p>
-          </div> */
-                    }
+            <Image 
+              src='/web-profile.png'
+              alt='profile'
+              width={300}
+              height={300}
+            />
+          </div> 
+
+
         </div>
 
 

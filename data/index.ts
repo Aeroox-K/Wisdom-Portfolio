@@ -8,7 +8,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
+      title: "I prioritize client collaborations",
       description: "",
       className: "lg:col-span-2 md:col-span-2 col-span-1 md:row-span-2 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -53,7 +53,7 @@ export const navItems = [
     {
       id: 5,
       title: "Currently building a React Native Project",
-      description: "The Inside Scoop",
+      description: "Constantly improving",
       className: "md:col-span-2 col-span-2 col-span-1 md:h-[336px]",
       imgClassName: "absolute right-0 bottom-0 md:w-96",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -116,7 +116,7 @@ export const navItems = [
     {
       id: 1,
       title: "CarHub",
-      des: "Find, book or rent a car — quickly and easily. Streamline your car rental experience with our effortless booking process",
+      des: "I built a car catalogue platform where users can explore cars by specs, and in the future rent cars...",
       img: "/carhub.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/headless-ui.svg"],
       link: "https://carhub-a.vercel.app",
@@ -124,7 +124,7 @@ export const navItems = [
     {
       id: 2,
       title: "Briefit - Simplify your reading with summarizer ",
-      des: "Summarize Articles with OPENAI GPT-4 - Simplify your reading with summarizer, an open source summarizer that transforms lenghty articles into clear and conscise summaries",
+      des: "I built a software that helps to transform lengthy articles to clear consciece summaries...",
       img: "/briefit.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/vitejs.svg"],
       link: "https://briefit.vercel.app",
@@ -132,7 +132,7 @@ export const navItems = [
     {
       id: 3,
       title: "Mecnomit - Engineering Servicing company",
-      des: "Mecnomit Limited is your trusted partner in Asset Integrity management and Inspection Services.",
+      des: "Mecnomit Limited is an Engineering Company best in Asset Integrity management and Inspection Services...",
       img: "/mecnomit.jpg",
       iconLists: ["/html-5.svg", "/css-3.svg", "/javascript.svg"],
       link: "https://mecnomit.com",
@@ -140,7 +140,7 @@ export const navItems = [
     {
       id: 4,
       title: "Aeroox-GPT4 - AI Integrated Open-AI Platform",
-      des: "Build something amazing with Aeroox-GPT-4 Possibilities are beyond your imagination.",
+      des: "I built a web platform that integrates AI based software projects for Aeroox-GPT4 as they are released",
       img: "/aeroox-gpt4.jpg",
       iconLists: ["/re.svg", "/css-3.svg", "/javascript.svg"],
       link: "https://aeroox-4-ai-project.vercel.app",
@@ -148,7 +148,7 @@ export const navItems = [
     {
       id: 5,
       title: "SuoBank - Digital Bank",
-      des: "Digital banking system for easy and faster monitary banking needs for day to day usage.",
+      des: "I built a Landing Page for a Digital Bank that offers Credit Cards and overall great banking experience...",
       img: "/suobank.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/vitejs.svg"],
       link: "https://suobank-a.vercel.app",
@@ -156,7 +156,7 @@ export const navItems = [
     {
       id: 6,
       title: "CarlsHelpdesk - Ticket Helpdesk",
-      des: "Carls Helpdesk is your central hub for managing all support-related activities.",
+      des: "I built a customer helpdesk platform where users create tickets by priority, view existing tickets, delete",
       img: "/carlshelpdesk.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/javascript.svg", "/firebase.svg"],
       link: "https://carls-helpdesk.vercel.app/",
@@ -168,7 +168,7 @@ export const navItems = [
       id: 1,
       img: "/Mecnomit-profile.png",
       quote:
-        "Collaborating with Wisdom was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wisdom's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wisdom is the ideal partner.",
+      "Working with Wisdom on our website design was an exceptional experience. His creativity and technical expertise transformed our vision into a stunning, user-friendly platform. Wisdom's attention to detail and commitment to meeting deadlines ensured that our project was completed smoothly and efficiently. If you're looking to create a standout website that truly represents your brand, Wisdom is the partner you need.",
       name: "Genesis Mecnomit",
       title:"Ceo Mecnomit Limted",
     },
@@ -176,7 +176,7 @@ export const navItems = [
       id: 2,
       img: "/Paynobs-profile.png",
       quote:
-        "Collaborating with Wisdom was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wisdom's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wisdom is the ideal partner.",
+        "Teaming up with Wisdom for our project was one of the best decisions we made. His professionalism, creativity, technical skills, ability to listen to our needs and provide valuable insights are his strong suits.",
       name: "Paynobs",
       title: "Director of Paynobs Technologies",
     },
@@ -184,7 +184,7 @@ export const navItems = [
       id: 3,
       img: "/untitled.png",
       quote:
-        "Collaborating with Wisdom was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Wisdom's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Wisdom is the ideal partner.",
+        "Teaming up with Wisdom for our website overhaul was a great decision. His expertise and responsiveness made the project seamless, and the end result is a beautiful, functional site that truly represents our brand. Highly recommend Wisdom for any web project.",
       name: "Blackaa",
       title: "Ceo of BLACKAA Technologies",
     },
