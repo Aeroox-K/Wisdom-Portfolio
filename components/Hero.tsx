@@ -26,9 +26,10 @@ const Hero = () => {
             <h2 className='uppercase tracking-widest text-sm md:text-sm text-start text-blue-100 max-w-80 '>
               {/* Hello, I am */}
             </h2>
+            <p className='text-start text-[38px] md:text-6xl lg:text-6xl font-bold md:-mb-2 -mb-6 ' >Creative</p>
             <TextGenerateEffect 
-            className='text-start text-[37px] md:text-5xl lg:text-5xl'
-            words='Creative Frontend Developer'
+            className='text-start text-[38px] md:text-6xl lg:text-6xl'
+            words='Frontend Developer'
             />
             <p className='text-start justify-center md:w-2/3 w-full md:tracking-wider leading-6 mb-4 text-sm md:text-lg lg:text-lg' >Hi, I&apos;m <span className='text-purple md:border-b-2 border-b border-purple ' >Wisdom Kayea</span> a Frontend Developer passionate about Designing and Developing creative and scalable websites with great performance and user experience.</p>
             
