@@ -26,7 +26,7 @@ const Hero = () => {
             <h2 className='uppercase tracking-widest text-sm md:text-sm text-start text-blue-100 max-w-80 '>
               {/* Hello, I am */}
             </h2>
-            <p className='text-start text-[38px] md:text-6xl lg:text-6xl font-bold md:-mb-2 -mb-6 ' >Creative</p>
+            <p className='text-start text-[38px] md:text-6xl lg:text-6xl font-bold md:-mb-2 -mb-4 ' >Creative</p>
             <TextGenerateEffect 
             className='text-start text-[38px] md:text-6xl lg:text-6xl'
             words='Frontend Developer'
