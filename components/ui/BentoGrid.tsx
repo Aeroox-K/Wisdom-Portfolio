@@ -113,21 +113,21 @@ export const BentoGridItem = ({
 
           {id === 2 && <GlobeDemo /> }
 
-          {id === 3 && (
-            <div className="flex gap-3 lg:gap-5 w-fit absolute -right-0 lg:-right-0" >
+          {id === 1 && (
+            <div className="flex gap-3 lg:gap-3 w-fit absolute right-0 lg:right-0" >
               
-              <div className="flex flex-col gap-1 lg:gap-4">
+              <div className=" grid grid-flow-col grid-rows-3 grid-cols-2 max-sm:mt-20 max-sm:flex max-sm:flex-col gap-1 lg:gap-4">
                 {stacks.map(({
                  id, itemOne, itemTwo, iconOne, iconTwo,
                 }) => (
 
-                  <div key={id} className="flex flex-row gap-1 lg:gap-4">
+                  <div key={id} className="grid grid-flow-col max-sm:mt-[11px] gap-3 lg:gap-4">
 
-                    <div className="flex flex-col gap-2 lg:gap-4">
+                    <div className="flex flex-col gap-3 lg:gap-4">
                           {/* leftside mapping */}
 
                           {itemOne.map((item) => (
-                            <span key={item} className="flex items-center gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
+                            <span key={item} className="flex items-center gap-2 py-3 lg:py-5 lg:px-5 px-4 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >
                                   {item} 
                                   {iconOne.map((icon, index) => (
                                       <div key={icon} >
@@ -144,11 +144,11 @@ export const BentoGridItem = ({
                     </div>
                       
                       
-                    <div className="flex flex-col gap-2 lg:gap-4">
+                    <div className="flex flex-col gap-10 lg:gap-4">
                       {/* rightside mapping */}
 
                       {itemTwo.map((item) => (
-                        <span key={item} className="flex items-center gap-2 py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >                       
+                        <span key={item} className="flex items-center gap-2 py-3 lg:py-5 lg:px-5 px-4 text-xs lg:text-sm opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]" >                       
                               {item} 
                               {iconTwo.map((icon, index) => (
                                   <div key={icon} >
