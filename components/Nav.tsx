@@ -11,8 +11,8 @@ const Nav = () => {
         <Image 
           src="Wisdom Logo-W.svg" 
           alt="Wisdom Logo-W.svg"
-          width={55}  
-          height={55}
+          width={60}  
+          height={60}
         />
       </Link>
 
