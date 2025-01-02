@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { cn } from "@/utils/cn";
 import { GlobeDemo } from "./GridGlobe"
@@ -54,10 +54,11 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('wisdomkayea16@gmail.com');
-
-    setCopied(true);
-  }
+    if (typeof navigator !== 'undefined') { // Ensure navigator is only accessed on the client side
+      navigator.clipboard.writeText('wisdomkayea16@gmail.com');
+      setCopied(true);
+    }
+  };
 
   return (
     <div

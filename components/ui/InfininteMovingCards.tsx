@@ -4,6 +4,7 @@ import { testimonials } from "@/data";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export const InfiniteMovingCards = ({
   items,
