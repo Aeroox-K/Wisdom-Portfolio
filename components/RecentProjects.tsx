@@ -1,3 +1,5 @@
+"use client"
+
 import { projects } from '@/data'
 import React, { Children } from 'react'
 import { CardBody, CardContainer } from './ui/3d-card'
@@ -23,14 +25,6 @@ const RecentProjects = () => {
                         <CardBody>                           
                         <div className='relative flex item-center justify-center w-[80vw] overflow-hidden sm:w-[460px] h-[35vh] md:h-[45vh] lg:h-[45vh] mb-10'>
                         <div className='relative w-full h-full overflow-hidden rounded-2xl lg:rounded-3xl bg-[#13162d]'>
-                            <Image 
-                               src="/bg.png" 
-                               alt="bg.jpg"
-                               width={500}  
-                               height={500}
-
-                            />
-                        </div>
                         <Image
                             src={img}
                             alt={title}
@@ -38,6 +32,8 @@ const RecentProjects = () => {
                             height={500}
                             className='z-10 rounded-3xl overflow-hidden absolute rotate-2 bottom-1'
                         /> 
+                        </div>
+                        
                        </div>
                        <h1 className='font-bold lg:text-2xl md:text-xl pl-1 text-bale line-clamp-1'>
                             {title}

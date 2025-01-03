@@ -40,6 +40,7 @@ export function Globe({
   className?: string;
   config?: COBEOptions;
 }) {
+  const [isClient, setIsClient] = useState(false);
   let phi = 0;
   let width = 0;
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -47,6 +48,10 @@ export function Globe({
   const pointerInteractionMovement = useRef(0);
   const [r, setR] = useState(0);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  
   const updatePointerInteraction = (value: any) => {
     pointerInteracting.current = value;
     if (canvasRef.current) {
@@ -79,7 +84,7 @@ export function Globe({
   };
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (isClient) {
       window.addEventListener("resize", onResize);
       onResize();
   
@@ -93,7 +98,11 @@ export function Globe({
       setTimeout(() => (canvasRef.current!.style.opacity = "1"));
       return () => globe.destroy();
     }
-  }, [config, onRender]);
+  }, [isClient, config, onRender]);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <div

@@ -2,7 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import { GlobeDemo } from "./GridGlobe"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
@@ -52,11 +52,17 @@ export const BentoGridItem = ({
 }) => {
 
   const [copied, setCopied] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleCopy = () => {
     if (typeof navigator !== 'undefined') { // Ensure navigator is only accessed on the client side
       navigator.clipboard.writeText('wisdomkayea16@gmail.com');
       setCopied(true);
+      setTimeout(() => setCopied(false), 5000);
     }
   };
 
@@ -168,29 +174,32 @@ export const BentoGridItem = ({
 
           )}
 
-         {id === 6 && (
-           <div className="mt-5 md:-mt-7 relative" >
-              <div className={`absolute -bottom-5 right-0`} >
-                <Lottie options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData,
-                    rendererSettings: {
+{id === 6 && (
+        <div className="mt-5 md:-mt-7 relative">
+          <div className={`absolute -bottom-5 right-0`}>
+          {isClient && (
+              <Lottie
+                options={{
+                  loop: copied,
+                  autoplay: copied,
+                  animationData,
+                  rendererSettings: {
                     preserveAspectRatio: 'xMidYMid slice',
-                    }
-                }}/>
-              </div> 
+                  },
+                }}
+              />
+            )}
+          </div>
 
-                <MagicButton 
-                  title={copied ? 'Email copied' : 'Copy my email'}
-                  icon={<IoCopyOutline/>}
-                  position="left"
-                  otherClasses="`bg-[#161a31]"
-                  handleClick={handleCopy}
-                />
-
-           </div>
-         )}
+          <MagicButton
+            title={copied ? 'Email copied' : 'Copy my email'}
+            icon={<IoCopyOutline />}
+            position="left"
+            otherClasses="`bg-[#161a31]"
+            handleClick={handleCopy}
+          />
+        </div>
+      )}
           
       </div>
     </div>

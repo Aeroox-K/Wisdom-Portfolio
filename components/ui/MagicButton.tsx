@@ -1,4 +1,4 @@
-import React from 'react'
+"use client"
 
 const MagicButton = (
   {title, icon, position, handleClick, otherClasses

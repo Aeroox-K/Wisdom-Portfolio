@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
@@ -13,16 +14,18 @@ export const TextGenerateEffect = ({
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
-    animate(
-      "span",
-      {
-        opacity: 1,
-      },
-      {
-        duration: 2,
-        delay: stagger(0.2),
-      }
-    );
+    if (typeof window !== 'undefined') {
+      animate(
+        "span",
+        {
+          opacity: 1,
+        },
+        {
+          duration: 2,
+          delay: stagger(0.2),
+        }
+      );
+    }
   }, [animate]);
 
   const renderWords = () => {
@@ -33,7 +36,7 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               // className={` ${idx < 1 ? 'text-purple': 'dark:text-white text-black' } text-purple opacity-0`}
-              className={` text-purple opacity-0`}
+              className={` text-purple break-keep opacity-0`}
            >
               {word}{" "}
             </motion.span>
